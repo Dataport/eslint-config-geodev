@@ -3,7 +3,7 @@ import geodevConfig from './configs/index.js'
 
 export default defineConfig([
 	{
-		files: [ '**/*.js' ],
-		extends: [ geodevConfig ],
+		files: ['**/*.js'],
+		extends: [geodevConfig],
 	},
 ])
