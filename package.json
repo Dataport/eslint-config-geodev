@@ -1,0 +1,30 @@
+{
+	"name": "@dataport/eslint-config-geodev",
+	"version": "0.1.0",
+	"description": "Generic ESLint configuration for geo development projects at Dataport",
+	"type": "module",
+	"main": "configs/index.js",
+	"scripts": {
+		"lint": "eslint .",
+		"lint:fix": "eslint --fix ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Dataport/eslint-config-geodev.git"
+	},
+	"author": "Dataport <DataportSoftwareentwicklungGeo@dataport.de>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Dataport/eslint-config-geodev/issues"
+	},
+	"homepage": "https://github.com/Dataport/eslint-config-geodev#readme",
+	"dependencies": {
+		"@stylistic/eslint-plugin": "^4.2.0"
+	},
+	"devDependencies": {
+		"eslint": "^9.25.1"
+	},
+	"peerDependencies": {
+		"eslint": ">= 9"
+	}
+}
