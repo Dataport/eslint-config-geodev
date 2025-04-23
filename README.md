@@ -14,9 +14,9 @@ Example for eslint.config.js:
 
 ```js
 import { defineConfig } from 'eslint/config'
-import mainConfig from 'eslint-config-geodev'
-import nodeConfig from 'eslint-config-geodev/node'
-import tsConfig from 'eslint-config-geodev/typescript'
+import mainConfig from '@dataport/eslint-config-geodev'
+import nodeConfig from '@dataport/eslint-config-geodev/node'
+import tsConfig from '@dataport/eslint-config-geodev/typescript'
 
 export default defineConfig([
 	{
