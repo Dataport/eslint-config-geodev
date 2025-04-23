@@ -1,9 +1,10 @@
 import { defineConfig } from 'eslint/config'
-import geodevConfig from './configs/index.js'
+import mainConfig from './configs/index.js'
+import nodeConfig from './configs/node.js'
 
 export default defineConfig([
 	{
 		files: ['**/*.js'],
-		extends: [geodevConfig],
+		extends: [mainConfig, nodeConfig],
 	},
 ])
