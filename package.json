@@ -4,6 +4,14 @@
 	"description": "Generic ESLint configuration for geo development projects at Dataport",
 	"type": "module",
 	"main": "configs/index.js",
+	"exports": {
+		".": "./configs/index.js",
+		"./node": "./configs/node.js",
+		"./browser": "./configs/browser.js",
+		"./typescript": "./configs/typescript.js",
+		"./vue": "./configs/vue.js",
+		"./vue2": "./configs/vue2.js"
+	},
 	"scripts": {
 		"lint": "eslint .",
 		"lint:fix": "eslint --fix ."

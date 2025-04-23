@@ -1,2 +1,39 @@
-# eslint-config
-Global ESLint configurations for JavaScript projects
+# @dataport/eslint-config-geodev
+
+This package provides shared ESLint configurations for JavaScript projects.
+
+## Installation
+
+```bash
+$ npm i -D eslint @dataport/eslint-config-geodev
+```
+
+## Usage
+
+Example for eslint.config.js:
+
+```js
+import { defineConfig } from 'eslint/config'
+import mainConfig from 'eslint-config-geodev'
+import nodeConfig from 'eslint-config-geodev/node'
+import tsConfig from 'eslint-config-geodev/typescript'
+
+export default defineConfig([
+	{
+		files: ['**/*.js', '**/*.ts'],
+		extends: [mainConfig, nodeConfig],
+	},
+	{
+		files: ['**/*.ts'],
+		extends: [tsConfig],
+	},
+])
+```
+
+The following sub-configs are offered:
+
+- `node`
+- `browser`
+- `typescript`
+- `vue`
+- `vue2`
