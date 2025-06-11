@@ -9,8 +9,6 @@ export default [
 		},
 		rules: {
 			'tsdoc/syntax': 'warn',
-			'no-use-before-define': 'off',
-			'@typescript-eslint/promise-function-async': 'off',
 			'@typescript-eslint/naming-convention': [
 				'error',
 				{
