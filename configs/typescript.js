@@ -2,8 +2,18 @@ import tseslint from 'typescript-eslint'
 import tsdoc from 'eslint-plugin-tsdoc'
 
 export default [
-	...tseslint.configs.strict,
+	...tseslint.configs.strictTypeChecked,
 	{
+		languageOptions: {
+			parserOptions: {
+				projectService: true,
+				ecmaVersion: 2021,
+				sourceType: 'module',
+			},
+		},
+	},
+	{
+		files: ['**/*.ts'],
 		plugins: {
 			tsdoc,
 		},
