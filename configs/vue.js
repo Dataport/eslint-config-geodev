@@ -12,7 +12,7 @@ export default [
 					js: 'espree',
 					ts: tsParser,
 				},
-				extraFileExtensions: [ '.vue' ],
+				extraFileExtensions: ['.vue'],
 			},
 		},
 	},
