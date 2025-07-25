@@ -1,6 +1,6 @@
 {
 	"name": "@dataport/eslint-config-geodev",
-	"version": "0.3.3",
+	"version": "0.3.4",
 	"description": "Generic ESLint configuration for geo development projects at Dataport",
 	"type": "module",
 	"main": "configs/index.js",
