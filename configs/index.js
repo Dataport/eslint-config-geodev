@@ -7,7 +7,7 @@ export default [
 	{
 		rules: {
 			'no-console': ['error', { allow: ['warn', 'error'] }],
-			curly: 'error',
+			curly: ['error', 'all'],
 			'no-else-return': 'error',
 			'func-style': ['error', 'declaration', { allowArrowFunctions: true }],
 			complexity: 'warn',
