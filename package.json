@@ -11,6 +11,7 @@
 		"./typescript": "./configs/typescript.js",
 		"./json": "./configs/json.js",
 		"./markdown": "./configs/markdown.js",
+		"./html": "./configs/html.js",
 		"./vue": "./configs/vue.js",
 		"./vue-pug": "./configs/vue-pug.js",
 		"./vue2": "./configs/vue2.js"
@@ -33,6 +34,7 @@
 		"@eslint/js": "^9.25.1",
 		"@eslint/json": "^0.13.1",
 		"@eslint/markdown": "^7.1.0",
+		"@html-eslint/eslint-plugin": "^0.47.0",
 		"@typescript-eslint/parser": "^8.34.1",
 		"eslint-plugin-tsdoc": "^0.4.0",
 		"eslint-plugin-vue": "^10.0.0",
