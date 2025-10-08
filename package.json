@@ -28,7 +28,7 @@
 		"url": "git+https://github.com/Dataport/eslint-config-geodev.git"
 	},
 	"author": "Dataport <DataportSoftwareentwicklungGeo@dataport.de>",
-	"license": "MIT",
+	"license": "EUPL-1.2",
 	"bugs": {
 		"url": "https://github.com/Dataport/eslint-config-geodev/issues"
 	},
