@@ -1,6 +1,10 @@
 import vue from 'eslint-plugin-vue'
+import { defineConfig } from 'eslint/config'
 
-export default [
+/**
+ * Shared ESLint configuration for Vue 2 files.
+ */
+export default defineConfig(
 	...vue.configs['flat/vue2-recommended'],
 	{
 		rules: {
@@ -8,4 +12,4 @@ export default [
 			'vue/order-in-components': 'error',
 		},
 	},
-]
+)

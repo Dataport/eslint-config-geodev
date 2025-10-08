@@ -1,6 +1,10 @@
 import markdown from '@eslint/markdown'
+import { defineConfig } from 'eslint/config'
 
-export default [
+/**
+ * Shared ESLint configuration for Markdown files.
+ */
+export default defineConfig(
 	{
 		plugins: {
 			markdown,
@@ -13,4 +17,4 @@ export default [
 			'markdown/no-missing-label-refs': 'off',
 		},
 	},
-]
+)

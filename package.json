@@ -3,20 +3,19 @@
 	"version": "0.4.1",
 	"description": "Generic ESLint configuration for geo development projects at Dataport",
 	"type": "module",
-	"main": "configs/index.js",
+	"main": "dist/index.js",
 	"exports": {
-		".": "./configs/index.js",
-		"./node": "./configs/node.js",
-		"./browser": "./configs/browser.js",
-		"./typescript": "./configs/typescript.js",
-		"./json": "./configs/json.js",
-		"./markdown": "./configs/markdown.js",
-		"./html": "./configs/html.js",
-		"./vue": "./configs/vue.js",
-		"./vue-pug": "./configs/vue-pug.js",
-		"./vue2": "./configs/vue2.js"
+		".": {
+			"types": "./dist/configs/index.d.ts",
+			"default": "./dist/configs/index.js"
+		},
+		"./*": {
+			"types": "./dist/configs/*.d.ts",
+			"default": "./dist/configs/*.js"
+		}
 	},
 	"scripts": {
+		"build": "tsc",
 		"lint": "eslint .",
 		"lint:fix": "eslint --fix ."
 	},
@@ -45,7 +44,11 @@
 		"vue-eslint-parser": "^10.1.3"
 	},
 	"devDependencies": {
-		"eslint": "^9.25.1"
+		"@types/eslint": "^9.6.1",
+		"@types/node": "^24.7.0",
+		"eslint": "^9.25.1",
+		"jiti": "^2.6.1",
+		"type-fest": "^5.0.1"
 	},
 	"peerDependencies": {
 		"eslint": ">= 9"

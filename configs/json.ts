@@ -1,11 +1,12 @@
 import json from '@eslint/json'
+import { defineConfig } from 'eslint/config'
 import dataportGeodev from '../rules/index.js'
 
-export default [
+/**
+ * Shared ESLint configuration for JSON files.
+ */
+export default defineConfig(
 	{
-		plugins: {
-			json,
-		},
 		language: 'json/json',
 		...json.configs.recommended,
 	},
@@ -18,4 +19,4 @@ export default [
 			'dataport-geodev/json-indent': 'error',
 		},
 	},
-]
+)

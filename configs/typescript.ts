@@ -1,8 +1,12 @@
+import { defineConfig } from 'eslint/config'
 import tseslint from 'typescript-eslint'
 import tsdoc from 'eslint-plugin-tsdoc'
 
-export default [
-	...tseslint.configs.strictTypeChecked,
+/**
+ * Shared ESLint configuration for TypeScript files.
+ */
+export default defineConfig(
+	tseslint.configs.strictTypeChecked,
 	{
 		languageOptions: {
 			parserOptions: {
@@ -33,4 +37,4 @@ export default [
 			'@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
 		},
 	},
-]
+)

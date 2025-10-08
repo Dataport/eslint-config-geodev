@@ -1,0 +1,25 @@
+{
+	"include": [
+		"configs",
+		"rules"
+	],
+	"compilerOptions": {
+		"outDir": "dist",
+		"noImplicitAny": false,
+		"importHelpers": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"experimentalDecorators": true,
+		"declaration": true,
+		"sourceMap": true,
+		"strictNullChecks": true,
+		"isolatedModules": true,
+		"target": "esnext",
+		"module": "nodenext",
+		"moduleResolution": "nodenext",
+		"skipLibCheck": false,
+		"types": [
+			"node"
+		]
+	}
+}

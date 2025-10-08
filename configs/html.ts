@@ -1,10 +1,14 @@
 import html from '@html-eslint/eslint-plugin'
+import { defineConfig } from 'eslint/config'
 
-export default [
+/**
+ * Shared ESLint configuration for HTML files.
+ */
+export default defineConfig(
 	html.configs['flat/recommended'],
 	{
 		rules: {
 			'@html-eslint/indent': ['error', 'tab'],
 		},
 	},
-]
+)

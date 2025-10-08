@@ -1,7 +1,11 @@
 import js from '@eslint/js'
+import { defineConfig } from 'eslint/config'
 import neostandard from 'neostandard'
 
-export default [
+/**
+ * Shared ESLint configuration for JavaScript files.
+ */
+export default defineConfig(
 	js.configs.recommended,
 	...neostandard(),
 	{
@@ -20,4 +24,4 @@ export default [
 			'import-x/order': 'error',
 		},
 	},
-]
+)
