@@ -5,6 +5,7 @@
 	],
 	"compilerOptions": {
 		"outDir": "dist",
+		"declaration": true,
 		"noImplicitAny": false,
 		"importHelpers": true,
 		"esModuleInterop": true,
