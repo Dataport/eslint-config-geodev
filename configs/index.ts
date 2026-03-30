@@ -1,4 +1,5 @@
 import js from '@eslint/js'
+import perfectionist from 'eslint-plugin-perfectionist'
 import { defineConfig } from 'eslint/config'
 import neostandard from 'neostandard'
 
@@ -9,6 +10,9 @@ export default defineConfig(
 	js.configs.recommended,
 	...neostandard(),
 	{
+		plugins: {
+			perfectionist,
+		},
 		rules: {
 			'no-console': ['error', { allow: ['warn', 'error'] }],
 			curly: ['error', 'all'],
@@ -21,7 +25,7 @@ export default defineConfig(
 			'@stylistic/indent': ['error', 'tab'],
 			'@stylistic/no-tabs': 'off',
 
-			'import-x/order': 'error',
+			'perfectionist/sort-imports': 'error',
 		},
 	},
 )

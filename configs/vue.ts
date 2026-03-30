@@ -1,7 +1,7 @@
-import vue from 'eslint-plugin-vue'
-import vueParser from 'vue-eslint-parser'
 import tsParser from '@typescript-eslint/parser'
+import vue from 'eslint-plugin-vue'
 import { defineConfig } from 'eslint/config'
+import vueParser from 'vue-eslint-parser'
 
 /**
  * Shared ESLint configuration for Vue files.

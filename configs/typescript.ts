@@ -1,6 +1,6 @@
+import tsdoc from 'eslint-plugin-tsdoc'
 import { defineConfig } from 'eslint/config'
 import tseslint from 'typescript-eslint'
-import tsdoc from 'eslint-plugin-tsdoc'
 
 /**
  * Shared ESLint configuration for TypeScript files.

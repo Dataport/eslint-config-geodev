@@ -1,5 +1,6 @@
 import json from '@eslint/json'
 import { defineConfig } from 'eslint/config'
+
 import dataportGeodev from '../rules/index.js'
 
 /**

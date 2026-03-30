@@ -1,4 +1,5 @@
 import { defineConfig } from 'eslint/config'
+
 import mainConfig from './configs/index.js'
 import nodeConfig from './configs/node.js'
 import tsConfig from './configs/typescript.js'
