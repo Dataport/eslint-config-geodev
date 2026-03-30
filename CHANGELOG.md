@@ -1,3 +1,13 @@
+## [1.0.0-alpha.3](https://github.com/Dataport/eslint-config-geodev/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2026-03-30)
+
+### Features
+
+* replace import-x with perfectionist ([9cb918c](https://github.com/Dataport/eslint-config-geodev/commit/9cb918c03ae7ae4b6f461eb8e1d8e08c51e65688))
+
+### Reverts
+
+* Revert "build(deps): bump @eslint/js from 9.39.1 to 10.0.1 (#15)" ([30f84e1](https://github.com/Dataport/eslint-config-geodev/commit/30f84e1324d8e59492a3a9e29036dac020b111d9)), closes [#15](https://github.com/Dataport/eslint-config-geodev/issues/15)
+
 ## [1.0.0-alpha.2](https://github.com/Dataport/eslint-config-geodev/compare/v1.0.0-alpha.1...v1.0.0-alpha.2) (2025-11-18)
 
 ### ⚠ BREAKING CHANGES
