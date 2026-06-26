@@ -35,5 +35,10 @@ The following sub-configs are offered:
 - `node`
 - `browser`
 - `typescript`
+- `typescript-vue`
 - `vue`
+- `vue-pug`
 - `vue2`
+- `html`
+- `markdown`
+- `json`
