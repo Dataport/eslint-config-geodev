@@ -1,5 +1,22 @@
 version: 2
 updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 20
+    cooldown:
+      default-days: 3
+    commit-message:
+      prefix: chore
+      include: scope
+    groups:
+      github-actions:
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
@@ -7,3 +24,68 @@ updates:
     open-pull-requests-limit: 20
     cooldown:
       default-days: 3
+    commit-message:
+      prefix: chore
+      include: scope
+    versioning-strategy: increase
+    groups:
+      commit:
+        patterns:
+          - "@commitlint/cli"
+          - "@commitlint/config-conventional"
+          - commitlint
+          - conventional-changelog
+          - conventional-changelog-conventionalcommits
+          - conventional-commits-filter
+          - conventional-commits-parser
+          - husky
+        update-types:
+          - minor
+          - patch
+      eslint:
+        patterns:
+          - "@eslint/js"
+          - "@eslint/json"
+          - "@eslint/markdown"
+          - "@types/eslint"
+          - eslint
+          - jiti
+        update-types:
+          - minor
+          - patch
+      types:
+        patterns:
+          - "@types/node"
+          - type-fest
+          - typescript
+        update-types:
+          - minor
+          - patch
+      html:
+        patterns:
+          - "@html-eslint/eslint-plugin"
+        update-types:
+          - minor
+          - patch
+      tseslint:
+        patterns:
+          - "@typescript-eslint/parser"
+          - eslint-plugin-tsdoc
+          - typescript-eslint
+        update-types:
+          - minor
+          - patch
+      vue-eslint:
+        patterns:
+          - eslint-plugin-vue
+          - eslint-plugin-vue-pug
+          - vue-eslint-parser
+        update-types:
+          - minor
+          - patch
+      misc:
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch
