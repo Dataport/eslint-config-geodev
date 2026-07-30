@@ -33,7 +33,6 @@ updates:
         patterns:
           - "@commitlint/cli"
           - "@commitlint/config-conventional"
-          - commitlint
           - conventional-changelog
           - conventional-changelog-conventionalcommits
           - conventional-commits-filter
