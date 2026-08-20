@@ -17,7 +17,7 @@
 		"target": "esnext",
 		"module": "nodenext",
 		"moduleResolution": "nodenext",
-		"skipLibCheck": false,
+		"skipLibCheck": true,
 		"types": [
 			"node"
 		]
