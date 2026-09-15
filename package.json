@@ -3,11 +3,15 @@
 	"version": "0.0.0-development",
 	"description": "Generic ESLint configuration for geo development projects at Dataport",
 	"type": "module",
-	"main": "dist/index.js",
+	"main": "dist/configs/index.js",
 	"exports": {
 		".": {
 			"types": "./dist/configs/index.d.ts",
 			"default": "./dist/configs/index.js"
+		},
+		"./plugins": {
+			"types": "./dist/plugins.d.ts",
+			"default": "./dist/plugins.js"
 		},
 		"./*": {
 			"types": "./dist/configs/*.d.ts",
