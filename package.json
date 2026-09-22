@@ -39,6 +39,7 @@
 	},
 	"homepage": "https://github.com/Dataport/eslint-config-geodev#readme",
 	"files": [
+		"dist/*",
 		"dist/**/*",
 		"README.md",
 		"LICENSE"
