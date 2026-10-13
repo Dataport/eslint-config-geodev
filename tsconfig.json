@@ -1,6 +1,8 @@
 {
 	"include": [
+		"eslint.config.ts",
 		"configs",
+		"plugins.ts",
 		"rules"
 	],
 	"compilerOptions": {
