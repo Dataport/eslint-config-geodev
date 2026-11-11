@@ -1,7 +1,7 @@
 import js from '@eslint/js'
 import perfectionist from 'eslint-plugin-perfectionist'
 import { defineConfig } from 'eslint/config'
-import neostandard from 'neostandard'
+import neostandard, { plugins } from 'neostandard'
 
 /**
  * Shared ESLint configuration for JavaScript files.
@@ -11,6 +11,7 @@ export default defineConfig(
 	...neostandard(),
 	{
 		plugins: {
+			'@stylistic': plugins['@stylistic'],
 			perfectionist,
 		},
 		rules: {
