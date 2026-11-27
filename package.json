@@ -47,7 +47,7 @@
 	"dependencies": {
 		"@eslint/js": "^10.0.1",
 		"@eslint/json": "^2.1.0",
-		"@eslint/markdown": "^8.0.3",
+		"@eslint/markdown": "^9.0.0",
 		"@html-eslint/eslint-plugin": "^0.68.0",
 		"@typescript-eslint/parser": "^8.34.1",
 		"eslint-plugin-perfectionist": "^5.7.0",
